@@ -1,0 +1,134 @@
+.first{
+}
+.home{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    overflow: hidden;
+}
+
+.img{
+    background-image: url(./images//interns.jpg);
+    height:80vh;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+}
+
+.p-design{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 48px 16px;
+    /* width:580.27px;*/
+   
+}
+
+.p-design a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid red;
+  border-radius: 30px;
+  color: red;
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  transition: background-color 0.6s;
+}
+.p-design a:hover  {
+  background-color: red;
+  color: white;
+}
+
+.f-end{
+    border: 1px solid orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 3rem 1rem;
+     
+}
+
+.fend-link {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid orange;
+  border-radius: 30px;
+  color:orange;
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  transition: background-color 0.6s;
+}
+.f-end a:hover  {
+  background-color: orange;
+  color: white;
+}
+
+.b-end{
+    border: 1px solid #eac435;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 3rem 1rem;
+}
+
+.b-end a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid #eac435;;
+  border-radius: 30px;
+  color: #eac435;;
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  transition: background-color 0.6s;
+}
+.b-end a:hover  {
+  background-color: #eac435;;
+  color: white;
+}
+
+.web3{
+    border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    padding: 3rem 1rem;
+}
+
+.web3 a {
+  display: block;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
+  border: 1px solid green;
+  border-radius: 30px;
+  color: green;
+  padding: 1rem;
+  width: 80%;
+  text-align: center;
+  transition: background-color 0.6s;
+}
+.web3 a:hover  {
+  background-color: green;
+  color: white;
+}
+

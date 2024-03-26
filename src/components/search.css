@@ -1,0 +1,17 @@
+.search-box{
+    background-color: rgb(129, 128, 128) ;
+    color: white ;
+    background-image: url('./images/searchIcon.svg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 40px !important;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+
+}
+
+::placeholder{
+    color: white;
+}
