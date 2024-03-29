@@ -1,9 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 
 function Web3({ webs, tableheading }) {
+  const [search, setSearch] = useState('');
   return (
     <Fade duration={3000}>
+      <div className="search">
+        <form>
+          <input
+            type="text"
+            id="search_field"
+            className="search-box"
+            placeholder=" Search Intern"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </form>
+      </div>
     <div className="start">
       <table style={{ width: "70%" }}>
         <thead>
@@ -26,7 +38,10 @@ function Web3({ webs, tableheading }) {
           </tr>
         </thead>
         <tbody>
-          {webs.map((web, index) => {
+          {webs.filter((web) => {
+            return search.toLowerCase() === '' ? web : web.name.toLowerCase().includes(search);
+          })
+          .map((web, index) => {
             return (
               <>
                 <tr className="" key={index}>

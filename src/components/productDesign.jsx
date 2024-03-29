@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
+
+
 function ProductDesign({ products, tableheading }) {
+  const [search, setSearch] = useState('');
   return (
     <Fade direction="down" duration={2000}>
+      <div className="search">
+        <form>
+          <input
+            type="text"
+            id="search_field"
+            className="search-box"
+            placeholder=" Search Intern"
+            onChange={(e) => setSearch(e.target.value)}
+          />
+        </form>
+      </div>
     <div className="start">
       <table style={{ width: "70%" }}>
         <thead>
@@ -25,7 +39,10 @@ function ProductDesign({ products, tableheading }) {
           </tr>
         </thead>
         <tbody>
-          {products.map((product, index) => {
+          {products.filter((product) => {
+            return search.toLowerCase() === '' ? product : product.name.toLowerCase().includes(search);
+          })
+          .map((product, index) => {
             return (
               <>
                 <tr className="" key={index}>

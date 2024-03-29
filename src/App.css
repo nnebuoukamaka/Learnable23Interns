@@ -1,47 +1,64 @@
-.app{
-  background-color: rgba(255, 255,255,1);
-
+.app {
+  background-color: rgba(255, 255, 255, 1);
 }
 
-.start{
-  margin-top: 20px;
+.start {
+  margin-top: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
   /* border: 1px solid red; */
 }
 
-.name{
+.name {
   font-size: 16px;
   font-weight: 400;
   border: 1px solid grey;
   background-color: rgb(247, 245, 245);
   width: 25%;
   padding-bottom: 20px;
-
 }
 
-.sex{
+.sex {
   border: 1px solid grey;
   width: 10%;
   text-align: center;
   background-color: rgb(247, 245, 245);
-
 }
 
-.attendance{
+.attendance {
   width: 15%;
   border: 1px solid grey;
   text-align: center;
   background-color: rgb(247, 245, 245);
-
-
 }
 
-.grade{
+.grade {
   border: 1px solid grey;
   text-align: center;
   width: 15%;
   background-color: rgb(247, 245, 245);
+}
 
+.search {
+  display: flex;
+  justify-content: end;
+  margin-right: 180px !important;
+}
+
+.search-box {
+  background-color: rgb(168, 166, 166);
+  color: rgba(255, 255, 255, 1);
+  background-image: url("../src/components/images/searchIcon.svg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 40px !important;
+  height: 35px;
+  border-radius: 4px;
+  border: none;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 1);
 }

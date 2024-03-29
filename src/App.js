@@ -5,7 +5,6 @@ import Web3Interns from './components/web3Interns';
 import ProductInterns from './components/productDesignInterns';
 import Home from './components/Home';
 import Layout from './components/Layout';
-import Trial from './components/trial';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { 
   BrowserRouter as Router,
@@ -14,17 +13,12 @@ import {
 
 function App() {
 
-  // const location = useLocation();
-  // const path = location.pathname
   return (
     <Router>
       <div className='app'>
         <Layout />
       <Routes>
-        <Route 
-        path = "/"
-        element = {<Home/>}>       
-        </Route>
+        <Route  path = "/" element = {<Home/>}></Route>
           <Route 
           path= "/frontend"
           element ={<Interns/>}>
@@ -44,10 +38,6 @@ function App() {
           <Route 
           path= "/pdesign"
           element ={<ProductInterns/>}>
-        </Route>
-          <Route 
-          path= "/trial"
-          element ={<Trial/>}>
         </Route>
       </Routes>
       </div>

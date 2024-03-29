@@ -22,9 +22,6 @@ function Layout() {
                 <div className='col-11 '>
                 {path !== "/" && (
                 <ul className='navbar-nav d-flex justify-content-end align-items-center'>
-                    <li className='nav-item '>
-                {/* <Search /> */} Hello
-                </li>
                  <li className='nav-item '>
              <Link className='nav-link text-primary'
                 to='/frontend'
